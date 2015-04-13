@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="4" revision="daisy"/>
+    <default sync-j="4" revision="daisy"/>
 
-  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="git://github.com/Freescale" name="freescale"/>
-  <remote fetch="git://git.openembedded.org" name="oe"/>
+    <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+    <remote fetch="git://github.com/Freescale" name="freescale"/>
+    <remote fetch="git://git.openembedded.org" name="oe"/>
+    <remote fetch="git://github.com/engicam-stable" name="engicam"/>
+    <remote fetch="git://github.com/imyller" name="nodejs"/>
+    <remote fetch="git://github.com/crosswalk-project" name="crosswalk"/>
+    <remote fetch="git://github.com/meta-qt5" name="qt5"/>
 
-  <project remote="yocto" revision="daisy" name="poky" path="sources/poky"/>
-  <project remote="yocto" revision="daisy" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
+    <project remote="freescale" revision="daisy" name="fsl-community-bsp-base" path="sources/base"/>
 
-  <project remote="oe" revision="daisy" name="meta-openembedded" path="sources/meta-openembedded"/>
+    <project remote="engicam" revision="master" name="meta-engicam" path="sources/meta-engicam">
+        <copyfile dest="engicam-setup-environment" src="tools/engicam-setup-environment"/>
+    </project>
 
-  <project remote="freescale" revision="daisy" name="fsl-community-bsp-base" path="sources/base">
-	<copyfile dest="README" src="README"/>
-	<copyfile dest="setup-environment" src="setup-environment"/>
-  </project>
+    <project remote="yocto" revision="daisy" name="poky" path="sources/poky"/>
+    <project remote="yocto" revision="daisy" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
-  <project remote="freescale" revision="daisy" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
-  <project remote="freescale" revision="daisy" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
+    <project remote="oe" revision="daisy" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+    <project remote="freescale" revision="daisy" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
+    <project remote="freescale" revision="daisy" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
+
+    <project remote="qt5" revision="daisy" name="meta-qt5" path="sources/meta-qt5"/>
+
+    <project remote="nodejs" revision="master" name="meta-nodejs" path="sources/meta-nodejs"/>
+    <project remote="nodejs" revision="angstrom-v2014.06-yocto1.6" name="bitbake-npm" path="sources/bitbake-npm"/>
+
+    <project remote="crosswalk" revision="master" name="meta-crosswalk" path="sources/meta-crosswalk"/>
 
 </manifest>
