@@ -7,6 +7,7 @@
     <remote fetch="git://github.com/Freescale" name="freescale"/>
     <remote fetch="git://git.openembedded.org" name="oe"/>
     <remote fetch="git://github.com/engicam-stable" name="engicam"/>
+    <remote fetch="git+ssh://git.fladi.at/openservices" name="openservices"/>
     <remote fetch="git://github.com/imyller" name="nodejs"/>
     <remote fetch="git://github.com/crosswalk-project" name="crosswalk"/>
     <remote fetch="git://github.com/meta-qt5" name="qt5"/>
@@ -16,6 +17,7 @@
     <project remote="engicam" revision="master" name="meta-engicam" path="sources/meta-engicam">
         <copyfile dest="engicam-setup-environment" src="tools/engicam-setup-environment"/>
     </project>
+    <project remote="openservices" revision="daisy" name="meta-sigmatek" path="sources/meta-sigmatek"/>
 
     <project remote="yocto" revision="daisy" name="poky" path="sources/poky"/>
     <project remote="yocto" revision="daisy" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
@@ -28,7 +30,7 @@
     <project remote="qt5" revision="daisy" name="meta-qt5" path="sources/meta-qt5"/>
 
     <project remote="nodejs" revision="master" name="meta-nodejs" path="sources/meta-nodejs"/>
-    <project remote="nodejs" revision="angstrom-v2014.06-yocto1.6" name="bitbake-npm" path="sources/bitbake-npm"/>
+    <project remote="nodejs" revision="1.22" name="bitbake-npm" path="sources/bitbake-npm"/>
 
     <project remote="crosswalk" revision="master" name="meta-crosswalk" path="sources/meta-crosswalk"/>
 
