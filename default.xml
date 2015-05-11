@@ -16,6 +16,7 @@
     </project>
     <project remote="openservices" revision="daisy" name="meta-engicam" path="sources/meta-engicam"/>
     <project remote="openservices" revision="daisy" name="meta-sigmatek" path="sources/meta-sigmatek"/>
+    <project remote="openservices" revision="daisy" name="meta-evon" path="sources/meta-evon"/>
 
     <project remote="yocto" revision="daisy" name="poky" path="sources/poky"/>
     <project remote="yocto" revision="daisy" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
