@@ -4,6 +4,7 @@
     <default sync-j="4" revision="daisy"/>
 
     <remote fetch="git+ssh://git.fladi.at/openservices" name="openservices"/>
+    <remote fetch="https://tfs.xamcontrol.com:8443/tfs/XAMControl/evonLinux/_git" name="evonHome"/>
     <remote fetch="git://git.yoctoproject.org" name="yocto"/>
     <remote fetch="git://github.com/Freescale" name="freescale"/>
     <remote fetch="git://git.openembedded.org" name="oe"/>
@@ -11,12 +12,12 @@
     <remote fetch="git://github.com/crosswalk-project" name="crosswalk"/>
     <remote fetch="git://github.com/meta-qt5" name="qt5"/>
 
-    <project remote="openservices" revision="daisy" name="evon-bsp-platform" path="sources/base">
+    <project remote="evonHome" revision="daisy" name="evon-bsp-platform" path="sources/base">
         <copyfile dest="setup-environment" src="setup-environment"/>
     </project>
-    <project remote="openservices" revision="daisy" name="meta-engicam" path="sources/meta-engicam"/>
-    <project remote="openservices" revision="daisy" name="meta-sigmatek" path="sources/meta-sigmatek"/>
-    <project remote="openservices" revision="daisy" name="meta-evon" path="sources/meta-evon"/>
+    <project remote="evonHome" revision="daisy" name="meta-engicam" path="sources/meta-engicam"/>
+    <project remote="evonHome" revision="daisy" name="meta-sigmatek" path="sources/meta-sigmatek"/>
+    <project remote="evonHome" revision="daisy" name="meta-evon" path="sources/meta-evon"/>
 
     <project remote="yocto" revision="daisy" name="poky" path="sources/poky"/>
     <project remote="yocto" revision="daisy" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
