@@ -12,7 +12,7 @@
     <remote fetch="git://github.com/crosswalk-project" name="crosswalk"/>
     <remote fetch="git://github.com/meta-qt5" name="qt5"/>
 
-    <project remote="evonHome" revision="daisy" name="evon-bsp-platform" path="sources/base">
+    <project remote="evonHome" revision="daisy" name="meta-base" path="sources/base">
         <copyfile dest="setup-environment" src="setup-environment"/>
     </project>
     <project remote="evonHome" revision="daisy" name="meta-engicam" path="sources/meta-engicam"/>
