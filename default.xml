@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-    <default sync-j="4" revision="daisy"/>
+    <default sync-j="4" revision="fido"/>
 
     <remote fetch="git+ssh://git.fladi.at/openservices" name="openservices"/>
     <remote fetch="https://tfs.xamcontrol.com:8443/tfs/XAMControl/evonLinux/_git" name="evonHome"/>
@@ -12,22 +12,22 @@
     <remote fetch="git://github.com/crosswalk-project" name="crosswalk"/>
     <remote fetch="git://github.com/meta-qt5" name="qt5"/>
 
-    <project remote="evonHome" revision="daisy" name="meta-base" path="sources/base">
+    <project remote="evonHome" revision="fido" name="meta-base" path="sources/base">
         <copyfile dest="setup-environment" src="setup-environment"/>
     </project>
-    <project remote="evonHome" revision="daisy" name="meta-engicam" path="sources/meta-engicam"/>
-    <project remote="evonHome" revision="daisy" name="meta-sigmatek" path="sources/meta-sigmatek"/>
-    <project remote="evonHome" revision="daisy" name="meta-evon" path="sources/meta-evon"/>
+    <project remote="evonHome" revision="fido" name="meta-engicam" path="sources/meta-engicam"/>
+    <project remote="evonHome" revision="fido" name="meta-sigmatek" path="sources/meta-sigmatek"/>
+    <project remote="evonHome" revision="fido" name="meta-evon" path="sources/meta-evon"/>
 
-    <project remote="yocto" revision="daisy" name="poky" path="sources/poky"/>
-    <project remote="yocto" revision="daisy" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
+    <project remote="yocto" revision="fido" name="poky" path="sources/poky"/>
+    <project remote="yocto" revision="fido" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
-    <project remote="oe" revision="daisy" name="meta-openembedded" path="sources/meta-openembedded"/>
+    <project remote="oe" revision="fido" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-    <project remote="freescale" revision="daisy" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
-    <project remote="freescale" revision="daisy" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
+    <project remote="freescale" revision="fido" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
+    <project remote="freescale" revision="fido" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
-    <project remote="qt5" revision="daisy" name="meta-qt5" path="sources/meta-qt5"/>
+    <project remote="qt5" revision="fido" name="meta-qt5" path="sources/meta-qt5"/>
 
     <project remote="nodejs" revision="master" name="meta-nodejs" path="sources/meta-nodejs"/>
     <project remote="nodejs" revision="1.22" name="bitbake-npm" path="sources/bitbake-npm"/>
